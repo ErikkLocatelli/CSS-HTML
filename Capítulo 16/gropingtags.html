@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <Style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            text-align:justify;
+            border-radius: 20px;
+        }
+        article {
+            background-color: lightgray;
+            padding:1px 10px;
+            border-radius: 10px;
+            margin: 8px auto;
+        }
+        footer {
+            background-color: black;
+            color: white;   
+            padding: 5px;
+             
+            text-align: center;
+            border: 3px solid white;
+        }
+
+        nav { 
+            background-color: rgb(102, 101, 101);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba( 0,0,0,0.315);
+        }
+
+        nav > a { 
+            text-decoration: none;
+            color: white;
+            font-weight:bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover { 
+            text-decoration: underline ;
+        }
+
+        footer > p { 
+            margin: 0px;
+        }
+    </Style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>11 de Setembro</h2>
+                <p>Aconteceu nos estados unidos da américa</p>
+            </article>
+            <article>
+                <h2>Corinthians vence a ponte preta em jogo eletrizante no Maracanã</h2>
+                <p>Com gols de Romero e Yuri Alberto o Corinthians vence o macaca por 3x0 em jogo
+                    incomum realizado em terras cariocas.
+                </p>
+                <aside>
+                    <p>Reportagem por Erik Locatelli (2023)</p>
+                </aside>
+            </article>
+        </section>
+        <section id="Jogos de quarta">
+
+        </section>
+    </main>
+    <footer>
+        <p>Erik Locatelli</p>
+        <p>Instagram:<a href="#">Link</a></p>
+    </footer>
+</body>
+</html>

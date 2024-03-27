@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body { 
+    background-color: #A295CC;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+h1 {
+    color:  #1E1833;
+}
+
+h2 {
+    color: #4C4466; 
+}
+
+h1#um {
+    color: #291233;
+}
+
+h1.prego {
+    color: aquamarine;
+}
+
+h2#dois{ 
+    color: #E4A6FF;
+}
+
+p {
+    text-align: justify;
+}
+

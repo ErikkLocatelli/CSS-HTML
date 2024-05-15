@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+:root {
+    --fonte-corderl: "Sriracha", cursive;
+    --fonte-destaque: "Passion One", sans-serif;
+}
+
+header {
+    height: 30vh;
+    background-color: black;
+    text-align: center;
+}
+
+header > h1 {
+    color: white;
+    padding-top: 50px;
+    font-size: 6vw;
+    font-family: var(--fonte-destaque);
+}
+
+header > h2 {
+    color: white; 
+    padding-bottom: 50px;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 3%;
+}
+
+article {
+    display: inline-block;
+    text-align: left;
+}
+
+.Paragrafos {
+    font-family: var(--fonte-corderl);
+    line-height: 2em; 
+    font-size: 3.8vw;   
+}
+
+.imagem {
+    background-size: cover;
+    height: 100vh;
+}
+
+#imagem1 {
+    background: url(imagens/background001.jpg) center center no-repeat fixed;
+}
+
+#imagem2 {
+    background: url(imagens/background002.jpg) center center no-repeat fixed;
+}
+
+article.ArtigoImagem {
+    background-color: rgba(0, 0, 0, 0.291);
+    color: white;
+}

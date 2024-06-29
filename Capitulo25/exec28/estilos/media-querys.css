@@ -1,0 +1,65 @@
+@charset "UTF-8"; 
+
+/* Typical Devices 
+pequenas telas: até 600px
+Celular: até 600px - 768px
+tablet: 768px - 992px
+desktop: 1025px - 1200px
+Grandes telas acima de 1200px
+*/ 
+
+@media print {
+
+}
+
+/*  Pode ignorar essas spec uma vez que o site é mobile first, mas a titulo é assim que chama pra celular e pequena tela etc
+
+@media screen and (max-width: 600px) {
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+}  */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../../pacote-imagens-cap25/imagens/back-tablet.jpg);
+    }
+
+    img#cel {display: none;}
+    img#tv {display: none;}
+    img#pc {display: none;}
+    img#print {display: none;}
+    img#tablet {display:block;}
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1920px) {
+    body {
+        background: url(../../pacote-imagens-cap25/imagens/back-pc.jpg) center center;
+        background-size: cover;
+    }
+
+    img#cel {display: none;}
+    img#tv {display: none;}
+    img#pc {display: block;}
+    img#print {display: none;}
+    img#tablet {display:none;}
+}
+
+@media screen and (min-width: 1920px) {
+    body {
+        background: url(../../pacote-imagens-cap25/imagens/back-tv.jpg);
+    }
+
+    img#cel {display: none;}
+    img#tv {display: block;}
+    img#pc {display: none;}
+    img#print {display: none;}
+    img#tablet {display:none;}
+}

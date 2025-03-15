@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid2</title>
+    <style>
+        .teste {
+            display: grid;
+            grid-template-columns: repeat(autofil, 1fr); 
+            grid-auto-rows: 200px;
+            grid-gap: .5rem;   
+            
+            grid-template-areas: 
+                "header header header header"  
+                "main main main aside"  
+                "footer footer footer footer"
+            ;
+        }
+
+        header {
+            grid-area : header; 
+        }
+        
+        main {
+            grid-area: main;
+        }
+
+        aside {
+            grid-area: aside; 
+        }
+
+        footer {
+            grid-area: footer; 
+        }
+
+        .teste * {
+            padding: 1rem;
+            background-color: blue;
+        }
+
+        .teste *:nth-child(even) {
+            background-color: lightblue;
+        }
+
+        @media screen and (max-width: 768px) {
+            .teste {
+            grid-template-areas: 
+                "header header header header"  
+                "main main main main"  
+                "footer footer footer footer"
+            ;
+        }
+        
+        aside {
+            display: none;
+        }
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="teste">
+        <header>header</header>
+        <main>main</main>
+        <aside>aside</aside>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

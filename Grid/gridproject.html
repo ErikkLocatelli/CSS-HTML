@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .teste {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-auto-rows: 200px;
+            grid-gap: 1rem;
+            grid-template-areas: 
+                "header header header header header header"
+                "main main main main main main-side"
+                "main main main main main main-side"
+                "f-side f-side f-side s-side s-side s-side"
+                "footer footer footer footer footer footer"
+            ;
+        }
+
+        header {
+            background-color: coral;
+            grid-area: header;
+        }
+
+        main {
+            background-color: blue;
+            grid-area: main;
+        }
+
+        .first-side {
+            background-color: red;
+            grid-area: f-side; 
+        }
+
+        .sec-side {
+            background-color: green;
+            grid-area: s-side;
+        }
+
+        .main-side {
+            background-color: yellow;
+            grid-area: main-side; 
+        }
+
+        footer {
+            background-color: yellow;
+            grid-area: footer
+        }
+
+    </style>
+</head>
+<body>
+    <div class="teste">
+        <header></header>
+        <main></main>
+        <aside class="first-side"></aside>
+        <aside class="sec-side"></aside>
+        <aside class="main-side"></aside>
+        <footer></footer>
+    </div>
+</body>
+</html>

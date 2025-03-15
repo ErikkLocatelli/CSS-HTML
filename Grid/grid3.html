@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .teste {
+            display: grid;
+            grid-template-columns: [pizza] repeat(5, 1fr) [sorvete]; 
+            grid-auto-rows: 200px;
+            grid-gap: .5rem; 
+         }
+
+         header, footer {
+            grid-column: pizza/sorvete;
+         }
+
+         main {
+            grid-column: 3;
+         }
+
+
+         .teste * {
+            padding: 1rem;
+            background-color: blue;
+        }
+
+        .teste *:nth-child(even) {
+            background-color: lightblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="teste">
+        <header>header</header>
+        <main>main</main>
+        <aside>aside</aside>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

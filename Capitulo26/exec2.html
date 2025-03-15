@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste flex-basis</title>
+    <style>
+        #caixa2 {
+            margin: auto;
+            height: 600px;
+            width: 600px;
+            display: flex;
+            background-color: red;
+            justify-content: space-evenly;
+
+        }
+
+        .caixa1 {
+            flex-grow: 200px;
+            height: 100%;
+            background-color: blue;
+           
+        }
+
+        .caixa3 {
+            flex-grow: 200px;
+            height: 100%;
+            background-color: green;
+           
+        }
+
+        .caixa1:hover {
+            flex-grow: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Teste flex-basis</h1>
+    <div id="caixa2">
+        <div class="caixa1"></div>
+        <div class="caixa1"></div>
+        <div class="caixa3"></div>
+        <div class="caixa3"></div>
+    </div>
+</body>
+</html>
